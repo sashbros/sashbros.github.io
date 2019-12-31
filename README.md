@@ -1,2 +1,2 @@
-# sarvagna-shukla.github.io
-personal website
+# dotme
+Just a dotme static webPage
