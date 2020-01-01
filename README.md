@@ -1,2 +1,2 @@
-# dotme
-Just a dotme static webPage
+# Personal Website
+Just a static webPage
