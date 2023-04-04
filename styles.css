@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tillana:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Changa+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Delius+Unicase&display=swap');
+
+* {
+    width: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    background: black;
+    color: white;
+    width: 100%;
+    height: 100%;
+
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.entry {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(137, 43, 226, 0.322); */
+}
+
+.entry-content {
+}
+
+.entry-content-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.entry-content-title {
+    font-family: 'Delius Unicase', cursive;
+    font-size: 60px;
+    margin-bottom: 25vh;
+    margin-left: 5vw;
+    height: fit-content;
+    width: fit-content;
+}
+
+.entry-content-subtitle {
+    font-family: 'Pacifico', cursive;
+    font-size: 40px;
+    margin-top: 25vh;
+    height: fit-content;
+    width: fit-content;
+}
+
+.container {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+}
+
+.tracker {
+    height: 100vh;
+    margin: 1vw;
+    text-align: center;
+    flex: 1;
+    left: 50%;
+    font-family: 'Josefin Sans', sans-serif;
+    transition: font-size 0.25s ease-in-out;
+    text-transform: uppercase;
+    transition: left 1s ease-in-out;
+    position: relative;
+}
+
+.tracker--show {
+    left: 0;
+    transition: left 1s ease-in-out;
+}
+
+.tracker--sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: calc(20vw - 0.5vw);
+    height: 100%;
+}
+
+.tracker-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+}
+
+.tracker-items > div {
+    height: fit-content;
+}
+
+.highlight {
+    font-size: 30px;
+    transition: font-size 0.25s ease-in-out;
+    color: greenyellow;
+}
+
+.content {
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 20px;
+    height: fit-content;
+    text-align: center;
+    flex: 4;
+    right: 100%;
+    height: fit-content;
+    position: relative;
+}
+
+.content--show {
+    right: 0;
+    transition: right 1s ease-in-out;
+}
+
+.content--nonsticky {
+    position: relative;
+    top: 0;
+    right: 0;
+    margin-left: calc(20vw + 1.5vw);
+    width: 80vw;
+}
+
+.content > div {
+    margin-bottom: 500px;
+    margin-top: 100px;
+}
+
+.content > div > h1 {
+    font-family: 'Changa One', cursive;
+    font-size: 40px;
+    width: fit-content;
+    display: inline-block;
+    background-color: red;
+    letter-spacing: 0.02em;
+    height: fit-content;
+    padding: 15px 30px;
+    margin-bottom: 100px;
+    text-transform: uppercase;
+}
+
+.aboutContent {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.about-image {
+    flex: 1;
+    margin: 0 40px;
+}
+
+.about-desc {
+    flex: 6;
+    text-align: left;
+    align-self: center;
+    margin: 10px 40px;
+}
+
+.aboutContent > div > img {
+    object-fit: cover;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    margin: 30px 0;
+}
+
+.project-image {
+    flex: 1;
+    padding: 10px;
+}
+
+.project-image > img {
+    object-fit: cover;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+.project-info {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.project-name-info {
+    flex: 1;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.project-title {
+    font-size: 40px;
+    width: max-content;
+    margin-right: 25px;
+}
+
+.project-link, .github-link {
+    color: white;
+    text-decoration: none;
+    width: 20px;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.project-link > svg {
+    width: 30px;
+}
+
+.github-link > svg {
+    width: 30px;
+}
+
+.project-description {
+    flex: 4;
+    margin: 30px 0;
+    text-align: center;
+}
+
+.list-skills {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    height: fit-content;
+}
+
+.skill {
+    flex: 1;
+    margin: 30px 50px;
+}
+
+.skill span {
+    background-color: rgba(0, 255, 255, 0.5);
+    padding: 10px 20px;
+}
+
+.experience-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    margin: 40px 0;
+}
+
+.experience-image {
+    flex: 1;
+    padding: 10px;
+}
+
+.experience-image > img {
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.experience-info {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: fit-content;
+}
+
+.experience-name-info {
+    flex: 1;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.experience-title {
+    font-size: 30px;
+    width: max-content;
+}
+
+.dash {
+    font-size: 30px;
+    width: max-content;
+    margin: 0 20px;
+}
+
+.experience-role {
+    font-size: 30px;
+    width: max-content;
+}
+
+.experience-duration {
+    flex: 1;
+    margin: 30px 0;
+}
+
+.contact-card {
+    height: fit-content;
+    margin-bottom: 500px;
+}
+
+.contact-item {
+    display: inline;
+    margin: 30px 0;
+}
+
+.contact-item a {
+    text-decoration: none;
+    color: white;
+    vertical-align: middle;
+}
+
+.slash {
+    font-size: 30px;
+    width: max-content;
+    vertical-align: middle;
+}
+
+.made-by {
+    font-family: 'Raleway', sans-serif;
+    position: relative;
+    bottom: 0;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 0px !important;
+    padding: 15px 0;
+    height: fit-content;
+}
+
+.git-stars, .git-forks {
+    display: inline;
+    vertical-align: middle;
+}
+
+.git-stars > svg {
+    width: 20px;
+    vertical-align: middle;
+}
+
+.git-forks > svg {
+    vertical-align: middle;
+    width: 15px;
+}
+
+.git-stars-count, .git-forks-count {
+    font-family: 'Consolas', sans-serif;
+    vertical-align: middle;
+    font-size: 20px;
+    margin-right: 15px;
+    margin-left: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+@media only screen and (max-width: 600) {
+   .tracker {
+        display: none;
+   }
+}
