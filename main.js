@@ -1,4 +1,4 @@
-import { orderList, entryObject, aboutMeObject, projectsList, skillsList, experienceList, contactObject } from "./objects";
+import { orderList, entryObject, aboutMeObject, projectsList, skillsList, experienceList, contactObject } from "./objects.js";
 
 let loadOrderListComponents = () => {
 	for (let i = 0; i < orderList.length; i++) {
